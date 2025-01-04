@@ -23,7 +23,7 @@ class Tennis : public Sports{
    protected:
    int no_of_matches;
    string details="Tennis, Ace, Kings game";
-   
+
     public:
    void give_details(){
     describe(details);
@@ -37,7 +37,7 @@ class Tennis : public Sports{
 
 
    void IsItRacketSports(){
-    if(racket_or_not==1)
+    if(racket_or_not==true)
      cout<<"yes its a racket sports"<<endl;
     else{
         cout<<"no"<<endl;
@@ -52,7 +52,7 @@ int main(){
 Tennis game1;
 game1.play("Federer","Djokovic");
 game1.setRacketSports(true);
-// game1.racket_or_not=true;
+// // game1.racket_or_not=true;
 game1.IsItRacketSports();
 game1.give_details();
 }
